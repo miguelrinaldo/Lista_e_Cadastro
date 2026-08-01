@@ -1,0 +1,35 @@
+<div id="div-form">
+    <h2>Cadastro</h2>
+    <form id="formulario">
+    <label for="Cadastro">Cadastro de veiculos</label>
+    <input type="text" name="cadastro" id="cadastro" [(ngModel)]="cadastro">
+
+    <label for="Lista">Valor do veiculo</label>
+    <input type="number" name="valor" id="valor"[(ngModel)]="lista">
+
+
+     <div id="div-btns">
+        <button type="submit" id="btnAdd" (click)="addValor()">Adicionar</button>
+        <button type="button" id="btnLimpar">Limpar</button>
+
+     </div>
+    </form>
+
+    <div id="div-lista">
+        @for(elem of listaCadastro; track elem.idCadastro ){
+            <input type="checkbox"> &nbsp;
+    <      <div class="div-item">{{elem.idCadastro}} - {{elem.descricao_cadastro}} - {{elem.Valor?.toFixed(2)?.replace('.',',')}}</div>
+       }@empty {
+        <div class="div-item">NENHUM PRODUTO ENCONTRADO</div>
+       }
+
+
+    </div>
+
+</div>
+
+
+   
+  
+
+    
