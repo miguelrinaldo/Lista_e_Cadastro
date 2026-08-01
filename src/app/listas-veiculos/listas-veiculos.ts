@@ -19,6 +19,7 @@ export class ListasVeiculos {
     valor.idCadastro = this.listaCadastro.length + 1
     valor.lista = this.lista
     valor.descricao_cadastro = this.cadastro
+    valor.Valor = this.valor
 
     this.listaCadastro.push(valor)
   }

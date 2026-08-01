@@ -3,4 +3,5 @@ export class Valor{
     descricao_cadastro? : string
     lista? : string
     Valor? : number
+    
 }
