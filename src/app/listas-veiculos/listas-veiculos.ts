@@ -15,14 +15,21 @@ export class ListasVeiculos {
   listaCadastro : Valor[] = []
 
   addValor(){
-    let valor = new Valor()
-    valor.idCadastro = this.listaCadastro.length + 1
-    valor.lista = this.lista
-    valor.descricao_cadastro = this.cadastro
-    valor.Valor = this.valor
+    let objVeiculo = new Valor()
+    objVeiculo.idCadastro = this.listaCadastro.length + 1
+    objVeiculo.lista = this.lista
+    objVeiculo.descricao_cadastro = this.cadastro
+    objVeiculo.valorProduto = this.valor
 
-    this.listaCadastro.push(valor)
+    this.listaCadastro.push(objVeiculo)
+
+     this.cadastro = ''
+    this.valor = 0.0
   }
+
+  limparTudo(){
+    this.listaCadastro = []
+   }
 }
 
 

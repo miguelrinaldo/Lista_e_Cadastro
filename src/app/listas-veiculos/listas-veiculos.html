@@ -5,12 +5,12 @@
     <input type="text" name="cadastro" id="cadastro" [(ngModel)]="cadastro">
 
     <label for="Lista">Valor do veiculo</label>
-    <input type="number" name="valor" id="valor"[(ngModel)]="lista">
+    <input type="number" name="valor" id="valor" [(ngModel)]="valor">
 
 
      <div id="div-btns">
         <button type="submit" id="btnAdd" (click)="addValor()">Adicionar</button>
-        <button type="button" id="btnLimpar">Limpar</button>
+        <button type="button" id="btnLimpar" (click)="limparTudo()">Limpar</button>
 
      </div>
     </form>
@@ -18,7 +18,7 @@
     <div id="div-lista">
         @for(elem of listaCadastro; track elem.idCadastro ){
             <input type="checkbox"> &nbsp;
-    <      <div class="div-item">{{elem.idCadastro}} - {{elem.descricao_cadastro}} - R$ {{elem.Valor?.toFixed(2)?.replace('.',',')}}</div>
+    <      <div class="div-item">{{elem.idCadastro}} - {{elem.descricao_cadastro}} - R$ {{elem.valorProduto}}</div>
        }@empty {
         <div class="div-item">NENHUM PRODUTO ENCONTRADO</div>
        }

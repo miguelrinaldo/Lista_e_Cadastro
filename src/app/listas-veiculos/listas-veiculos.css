@@ -1,0 +1,113 @@
+#div-form {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 24px 28px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #2c3e50;
+}
+
+#div-form h2 {
+  margin: 0 0 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 12px;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#formulario label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: -8px;
+}
+
+#formulario input[type="text"],
+#formulario input[type="number"] {
+  padding: 10px 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#formulario input[type="text"]:focus,
+#formulario input[type="number"]:focus {
+  border-color: #4f7cff;
+  box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.15);
+}
+
+#div-btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+#btnAdd,
+#btnLimpar {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+#btnAdd {
+  background: #4f7cff;
+  color: #fff;
+}
+
+#btnAdd:hover {
+  background: #3a63e0;
+}
+
+#btnLimpar {
+  background: #f1f2f6;
+  color: #444;
+}
+
+#btnLimpar:hover {
+  background: #e2e4ea;
+}
+
+#btnAdd:active,
+#btnLimpar:active {
+  transform: scale(0.97);
+}
+
+#div-lista {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.div-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  background: #f9fafb;
+  border: 1px solid #eceef1;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+#div-lista input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #4f7cff;
+}
